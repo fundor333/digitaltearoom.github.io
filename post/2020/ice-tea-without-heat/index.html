@@ -14,7 +14,7 @@
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
-  <script src="https://kit.fontawesome.com/2f3b6e2e4c.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/7420185564.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -143,7 +143,7 @@ What you need This is a list of what I use and the ammount of tea I use." />
       <div class="col">
         <h1 class="title col-8 offset-2 text-center">Ice Tea Without Heat</h1>
         <hr>
-<article class="center post">
+<article id="post" class="center post">
 
   <div class="col-8 offset-2 ">
     
@@ -323,6 +323,14 @@ if (!doNotTrack) {
 </script>
 
 
+
+
+<script>
+  $('.post').find("h2").prepend( "<i class=\"fas fa-mug\"></i> " );
+  $('.post').find("h3").prepend( "<i class=\"fas fa-mug-tea\"></i> " );
+  $('.post').find("h4").prepend( "<i class=\"fa-coffee-togo\"></i> " );
+
+</script>
 </body>
 
 </html>

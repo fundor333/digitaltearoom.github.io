@@ -14,7 +14,7 @@
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
-  <script src="https://kit.fontawesome.com/2f3b6e2e4c.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/7420185564.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -148,7 +148,7 @@
 The tea I use a base black tea peach in bag because it is the easy way to find it and is not too expensive for make some experiment but you can use more expensive tea for your tea.</p>
         <div class="row justify-content-md-center">
           <p>
-            <small>🍵
+            <small><i class="fas fa-mug-tea"></i>
               Reading time 2 minutes
             </small>
           </p>
@@ -199,7 +199,7 @@ So I find a way to make tea without heat. And I don&rsquo;t want to make hot tea
 What you need This is a list of what I use and the ammount of tea I use.</p>
         <div class="row justify-content-md-center">
           <p>
-            <small>🍵
+            <small><i class="fas fa-mug-tea"></i>
               Reading time 3 minutes
             </small>
           </p>
@@ -314,6 +314,14 @@ if (!doNotTrack) {
 </script>
 
 
+
+
+<script>
+  $('.post').find("h2").prepend( "<i class=\"fas fa-mug\"></i> " );
+  $('.post').find("h3").prepend( "<i class=\"fas fa-mug-tea\"></i> " );
+  $('.post').find("h4").prepend( "<i class=\"fa-coffee-togo\"></i> " );
+
+</script>
 </body>
 
 </html>
