@@ -2,14 +2,14 @@
 <rss version="2.0"
 	xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>preparation on Digital Tea Room</title>
-		<link>https://digitaltearoom.com/categories/preparation/</link>
-		<description>Recent content in preparation on Digital Tea Room</description>
+		<title>bakery on Digital Tea Room</title>
+		<link>https://digitaltearoom.com/tags/bakery/</link>
+		<description>Recent content in bakery on Digital Tea Room</description>
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en</language>
-		<lastBuildDate>Thu, 20 Aug 2020 15:03:24 +0200</lastBuildDate>
+		<lastBuildDate>Mon, 12 Oct 2020 13:20:06 +0200</lastBuildDate>
     
-        <atom:link href="https://digitaltearoom.com/categories/preparation/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://digitaltearoom.com/tags/bakery/index.xml" rel="self" type="application/rss+xml" />
     
     
     
