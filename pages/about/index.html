@@ -114,8 +114,6 @@ Sometime it will be serius, sometime free thought and sometime very planned post
     
   </ul>
 </nav>
-
-<br>
 <br>
   <div class="container">
     <div class="row">
@@ -124,15 +122,7 @@ Sometime it will be serius, sometime free thought and sometime very planned post
 
           <div class="d-md-block">
 
-            
-            
-            
-            
-
-            
-
-            <img data-src="https://digitaltearoom.com/img/logo_tearoom.png" src="https://digitaltearoom.com/img/logo_tearoom_huf0b60ed4a70309f31172dd14331b3a40_958380_aa72e1e11ca5c178e04225a695004719.png" alt="What is THIS"
-              class="img-fluid lazy">
+            <img loading="lazy" class="img-fluid lazy" src="/img/logo_tearoom.png" width="945" height="945">
 
           </div>
         </div>
@@ -183,11 +173,22 @@ Not less, not more.</p>
 <p>Sometime it will be serius, sometime free thought and sometime very planned post but allwayes about tea.</p>
 
   </div>
-</article><footer></footer>
+</article><footer class="center">
+  <p class="text-center">
+    Built with <a target="_blank" href="https://gohugo.io/">Hugo</a> -
+    Source code available on <a target="_blank" href="https://github.com/fundor333/DigitalTea">GitHub</a>
+  </p>
+</footer>
 
       </div>
     </div>
-  </div>
+  </div><footer class="center">
+  <p class="text-center">
+    Built with <a target="_blank" href="https://gohugo.io/">Hugo</a> -
+    Source code available on <a target="_blank" href="https://github.com/fundor333/DigitalTea">GitHub</a>
+  </p>
+</footer>
+
 <script type="application/javascript">
 var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
 var doNotTrack = (dnt == "1" || dnt == "yes");
@@ -211,59 +212,6 @@ if (!doNotTrack) {
 }
 </script>
 
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    var lazyloadImages;
-
-    if ("IntersectionObserver" in window) {
-      lazyloadImages = document.querySelectorAll(".lazy");
-      var imageObserver = new IntersectionObserver(function (entries, observer) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            var image = entry.target;
-            image.src = image.dataset.src;
-            image.classList.remove("lazy");
-            imageObserver.unobserve(image);
-          }
-        });
-      });
-
-      lazyloadImages.forEach(function (image) {
-        imageObserver.observe(image);
-      });
-    } else {
-      var lazyloadThrottleTimeout;
-      lazyloadImages = document.querySelectorAll(".lazy");
-
-      function lazyload() {
-        if (lazyloadThrottleTimeout) {
-          clearTimeout(lazyloadThrottleTimeout);
-        }
-
-        lazyloadThrottleTimeout = setTimeout(function () {
-          var scrollTop = window.pageYOffset;
-          lazyloadImages.forEach(function (img) {
-            if (img.offsetTop < (window.innerHeight + scrollTop)) {
-              img.src = img.dataset.src;
-              img.classList.remove('lazy');
-            }
-          });
-          if (lazyloadImages.length == 0) {
-            document.removeEventListener("scroll", lazyload);
-            window.removeEventListener("resize", lazyload);
-            window.removeEventListener("orientationChange", lazyload);
-          }
-        }, 360);
-      }
-
-      document.addEventListener("scroll", lazyload);
-      window.addEventListener("resize", lazyload);
-      window.addEventListener("orientationChange", lazyload);
-    }
-  })
-
-</script>
 
 
 
